@@ -7,9 +7,9 @@ class StoreManager: ObservableObject {
     @Published var products: [Product] = []
 
     private let productIDs = [
-        "com.doclens.app.pro.monthly",
-        "com.doclens.app.pro.annual",
-        "com.doclens.app.lifetime"
+        "com.kokicoder.doclens.pro.monthly",
+        "com.kokicoder.doclens.pro.annual",
+        "com.kokicoder.doclens.lifetime"
     ]
 
     static let freeScansPerMonth = 5
@@ -58,3 +58,4 @@ class StoreManager: ObservableObject {
     var proAnnual:  Product? { products.first { $0.id.contains("annual") } }
     var lifetime:   Product? { products.first { $0.id.contains("lifetime") } }
 }
+
