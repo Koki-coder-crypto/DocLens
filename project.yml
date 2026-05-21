@@ -32,15 +32,9 @@ targets:
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         TARGETED_DEVICE_FAMILY: "1,2"
         SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
-    entitlements:
-      path: ios_app/DocLens.entitlements
-      properties:
-        com.apple.developer.in-app-payments:
-          - com.kokicoder.doclens.pro.monthly
-          - com.kokicoder.doclens.pro.annual
-          - com.kokicoder.doclens.lifetime
     capabilities:
       - camera
       - photo-library
       - in-app-purchase
+
 
