@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-struct ScannedDocument: Identifiable, Codable {
+struct ScannedDocument: Identifiable, Codable, Hashable {
     let id: UUID
     var title: String
     let createdAt: Date
@@ -13,7 +13,7 @@ struct ScannedDocument: Identifiable, Codable {
     var imageFileNames: [String]
     var language: String
 
-    enum DocumentCategory: String, Codable, CaseIterable {
+    enum DocumentCategory: String, Codable, CaseIterable, Hashable {
         case general, receipt, contract, note, article, id, other
         var icon: String {
             switch self {
