@@ -1,0 +1,39 @@
+App Review Notes — DocLens 1.0
+
+Dear App Review Team,
+
+Thank you for reviewing DocLens.
+
+WHAT THE APP DOES:
+DocLens is a document scanning utility that uses the device camera to capture documents, extracts text using Apple's Vision framework (on-device OCR), and provides AI-generated summaries, key points, and automatic document category detection.
+
+HOW TO TEST:
+1. Open the app — the Scan tab is shown by default.
+2. Tap "Scan with Camera" and grant camera permission when prompted.
+   - Alternatively, tap "Import from Photos" and select any image containing text.
+3. The built-in VisionKit document scanner appears. Scan any document (a printed page, receipt, or handwritten note works well).
+4. After saving the scan, the app extracts text on-device and calls the AI for analysis. This takes 5-15 seconds depending on document length.
+5. The completed document opens automatically, showing the Summary, Text, and Pages tabs.
+6. The Documents tab shows all saved documents with search and category filtering.
+7. Settings shows subscription status.
+
+SUGGESTED TEST DOCUMENT:
+Any printed text on paper works. You can also test using "Import from Photos" with a screenshot of an email or article — no physical documents required.
+
+AI FEATURE NOTE:
+The AI summary (Claude API) requires a valid ANTHROPIC_API_KEY in the build configuration. For the review build, a test key will be embedded. If the API call fails, the app shows the raw OCR text without an AI summary — the core scanning functionality works offline.
+
+IN-APP PURCHASES:
+- com.doclens.app.pro.monthly  ($3.99/month, 3-day trial)
+- com.doclens.app.pro.annual   ($27.99/year, 7-day trial)
+- com.doclens.app.lifetime     ($34.99 one-time)
+
+Free tier allows 5 scans/month with basic OCR. Pro removes all limits and enables AI analysis.
+
+PRIVACY:
+- OCR runs entirely on-device via Apple Vision framework — images are never uploaded.
+- Only extracted text is sent to the Claude API (HTTPS) for summarization; no images are transmitted.
+- No personal data is collected or stored on external servers.
+- No analytics or advertising SDKs are used.
+
+Contact: kouki_1203@icloud.com

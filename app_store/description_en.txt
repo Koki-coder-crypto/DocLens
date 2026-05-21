@@ -1,0 +1,46 @@
+DocLens turns your camera into a powerful AI-powered document reader.
+
+Point your camera at any document — a receipt, contract, handwritten note, article, or ID — and DocLens extracts the text and generates an instant AI summary. No more squinting, typing, or hunting for a specific line.
+
+── WHAT DOCLENS DOES ──
+
+📷 SCAN
+Use the built-in document camera for crisp, multi-page scans. Or import any existing image from your photo library.
+
+🔍 OCR
+High-accuracy text recognition powered by Apple Vision framework — works offline, supports 7 languages including English and Japanese.
+
+✨ AI ANALYSIS
+After scanning, AI automatically produces:
+• A clear document summary
+• Key facts and figures extracted
+• Smart category detection (receipt, contract, note, article, and more)
+
+📂 ORGANIZE
+Your document library with search and category filters. Tap any document to view the original scan, extracted text, and AI summary side by side.
+
+↗️ EXPORT
+Share extracted text or summaries via the system share sheet — copy to clipboard, send via email, or export to any app.
+
+── DOCLENS PRO ──
+
+Free plan: 5 scans/month with basic OCR.
+
+Upgrade to Pro for:
+• Unlimited scans
+• Full AI analysis on every document
+• Multi-page document scanning
+• PDF and text export
+• Smart category organization
+• No ads, ever
+
+Plans: Monthly ($3.99/mo), Annual ($27.99/yr — save 42%), or Lifetime ($34.99 one-time).
+Annual plan includes a 7-day free trial.
+
+── PRIVACY ──
+
+• OCR runs entirely on your device — images are never uploaded
+• AI analysis uses encrypted API calls with no data retention
+• All documents are stored locally on your device only
+
+DocLens — every document, instantly understood.

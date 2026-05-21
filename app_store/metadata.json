@@ -1,0 +1,128 @@
+{
+  "app_info": {
+    "name": "DocLens - AI Document Scanner",
+    "subtitle": "Scan. Extract. Understand.",
+    "bundle_id": "com.doclens.app",
+    "sku": "DOCLENS001",
+    "primary_language": "en-US",
+    "primary_category": "Utilities",
+    "secondary_category": "Productivity",
+    "content_rights": {
+      "third_party_content": false,
+      "description": ""
+    },
+    "age_rating": {
+      "rating": "4+",
+      "unrestricted_web_access": false,
+      "gambling": false,
+      "contests": false,
+      "mature_or_suggestive_themes": "NONE",
+      "horror_fear_themes": "NONE",
+      "medical_treatment_info": "NONE",
+      "alcohol_tobacco_or_drug_use": "NONE",
+      "simulated_gambling": "NONE",
+      "sexual_content_or_nudity": "NONE",
+      "graphic_violence": "NONE",
+      "realistic_violence": "NONE",
+      "cartoon_fantasy_violence": "NONE"
+    }
+  },
+  "version_info": {
+    "version": "1.0.0",
+    "build": "1",
+    "copyright": "2026 Koki. All rights reserved."
+  },
+  "app_store_info": {
+    "promotional_text": "Snap any document and get an AI summary in seconds. Receipts, contracts, notes, and more. 📄",
+    "support_url": "https://github.com/Koki-coder-crypto/LynQ_backend/issues",
+    "marketing_url": "https://github.com/Koki-coder-crypto/LynQ_backend",
+    "privacy_policy_url": "https://github.com/Koki-coder-crypto/LynQ_backend/blob/master/app_store/privacy_policy.html"
+  },
+  "review_info": {
+    "first_name": "Koki",
+    "last_name": "Developer",
+    "phone_number": "",
+    "email": "kouki_1203@icloud.com",
+    "demo_account_required": false,
+    "notes": "app_store/review_notes.txt"
+  },
+  "localizations": {
+    "en-US": {
+      "name": "DocLens - AI Document Scanner",
+      "subtitle": "Scan. Extract. Understand.",
+      "keywords": "document scanner,ocr,pdf scanner,text recognition,ai scanner,receipt scan,contract scan,scan to text",
+      "description_file": "description_en.txt",
+      "whats_new_file": "whats_new_en.txt"
+    },
+    "ja": {
+      "name": "DocLens - AIドキュメントスキャナー",
+      "subtitle": "スキャン・文字抽出・AI解析",
+      "keywords": "スキャナー,OCR,文書スキャン,文字認識,AIスキャン,レシート読み取り,PDF作成,書類整理",
+      "description_file": "description_ja.txt",
+      "whats_new_file": "whats_new_ja.txt"
+    }
+  },
+  "iap_products": [
+    {
+      "product_id": "com.doclens.app.pro.monthly",
+      "type": "auto_renewable_subscription",
+      "reference_name": "DocLens Pro Monthly",
+      "price_tier": "Tier 4",
+      "price_usd": 3.99,
+      "price_jpy": 600,
+      "subscription_group": "DocLens Pro",
+      "subscription_duration": "1 Month",
+      "free_trial": "3 Days",
+      "localizations": {
+        "en-US": { "display_name": "DocLens Pro Monthly", "description": "Unlimited scans with AI analysis, billed monthly." },
+        "ja":    { "display_name": "DocLens Pro 月額プラン", "description": "無制限スキャン＋AI解析。月額課金。" }
+      }
+    },
+    {
+      "product_id": "com.doclens.app.pro.annual",
+      "type": "auto_renewable_subscription",
+      "reference_name": "DocLens Pro Annual",
+      "price_tier": "Tier 14",
+      "price_usd": 27.99,
+      "price_jpy": 4200,
+      "subscription_group": "DocLens Pro",
+      "subscription_duration": "1 Year",
+      "free_trial": "7 Days",
+      "localizations": {
+        "en-US": { "display_name": "DocLens Pro Annual", "description": "Unlimited AI-powered document scanning — save 42% vs. monthly." },
+        "ja":    { "display_name": "DocLens Pro 年額プラン", "description": "無制限スキャン＋AI解析。月額より42%お得。" }
+      }
+    },
+    {
+      "product_id": "com.doclens.app.lifetime",
+      "type": "non_consumable",
+      "reference_name": "DocLens Lifetime",
+      "price_tier": "Tier 23",
+      "price_usd": 34.99,
+      "price_jpy": 5400,
+      "localizations": {
+        "en-US": { "display_name": "DocLens Lifetime", "description": "Pay once and unlock DocLens Pro forever — no recurring fees." },
+        "ja":    { "display_name": "DocLens 買い切りプラン", "description": "一度の購入でDocLens Proを永久に利用できます。" }
+      }
+    }
+  ],
+  "devices": {
+    "iphone": true,
+    "ipad": true,
+    "mac_catalyst": false,
+    "apple_watch": false,
+    "apple_tv": false
+  },
+  "capabilities": [
+    "Camera",
+    "Photo Library",
+    "In-App Purchase"
+  ],
+  "entitlements": {
+    "in_app_purchases": true,
+    "push_notifications": false,
+    "app_groups": false,
+    "icloud": false
+  },
+  "minimum_os_version": "17.0"
+}

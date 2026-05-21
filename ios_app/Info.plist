@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key>
+    <string>DocLens</string>
+    <key>CFBundleDisplayName</key>
+    <string>DocLens</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.doclens.app</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>UILaunchScreen</key>
+    <dict/>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+    </array>
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>NSCameraUsageDescription</key>
+    <string>DocLens needs camera access to scan and capture your documents.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>DocLens needs access to your photo library so you can import existing images of documents.</string>
+    <key>ANTHROPIC_API_KEY</key>
+    <string>$(ANTHROPIC_API_KEY)</string>
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
+    <key>NSUserTrackingUsageDescription</key>
+    <string></string>
+</dict>
+</plist>

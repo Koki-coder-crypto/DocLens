@@ -1,0 +1,8 @@
+Welcome to DocLens 1.0!
+
+• Scan any document with the built-in camera
+• High-accuracy OCR in 7 languages, works offline
+• AI summary, key points, and smart category detection
+• Multi-page document scanning
+• Searchable document library with original page viewer
+• Share and export text instantly
