@@ -36,7 +36,7 @@ platform :ios do
     deliver(
       api_key:                  api_key,
       ipa:                      "./build/DocLens.ipa",
-      app_identifier:           "com.doclens.app",
+      app_identifier:           "com.kokicoder.doclens",
       name:                     "DocLens - AI Document Scanner",
       description:              {
         "en-US" => File.read("app_store/description_en.txt"),
