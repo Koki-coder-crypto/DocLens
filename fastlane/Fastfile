@@ -37,7 +37,7 @@ platform :ios do
       api_key:                  api_key,
       ipa:                      "./build/DocLens.ipa",
       app_identifier:           "com.kokicoder.doclens",
-      name:                     "DocLens - AI Document Scanner",
+      name:                     {"en-US" => "DocLens - AI Document Scanner", "ja" => "DocLens - AIドキュメントスキャナー"},
       description:              {
         "en-US" => File.read("../app_store/description_en.txt"),
         "ja"    => File.read("../app_store/description_ja.txt")
@@ -89,7 +89,7 @@ platform :ios do
     deliver(
       api_key:               api_key,
       app_identifier:        "com.kokicoder.doclens",
-      name:                  "DocLens - AI Document Scanner",
+      name:                  {"en-US" => "DocLens - AI Document Scanner", "ja" => "DocLens - AIドキュメントスキャナー"},
       description: {
         "en-US" => File.read("../app_store/description_en.txt"),
         "ja"    => File.read("../app_store/description_ja.txt")
