@@ -39,16 +39,16 @@ platform :ios do
       app_identifier:           "com.kokicoder.doclens",
       name:                     "DocLens - AI Document Scanner",
       description:              {
-        "en-US" => File.read("app_store/description_en.txt"),
-        "ja"    => File.read("app_store/description_ja.txt")
+        "en-US" => File.read("../app_store/description_en.txt"),
+        "ja"    => File.read("../app_store/description_ja.txt")
       },
       keywords:                 {
         "en-US" => "document scanner,ocr,pdf scanner,text recognition,ai scanner,receipt scan,contract scan,scan to text",
         "ja"    => "スキャナー,OCR,文書スキャン,文字認識,AIスキャン,レシート読み取り,PDF作成,書類整理"
       },
       release_notes:            {
-        "en-US" => File.read("app_store/whats_new_en.txt"),
-        "ja"    => File.read("app_store/whats_new_ja.txt")
+        "en-US" => File.read("../app_store/whats_new_en.txt"),
+        "ja"    => File.read("../app_store/whats_new_ja.txt")
       },
       primary_category:         "UTILITIES",
       secondary_category:       "PRODUCTIVITY",
@@ -76,14 +76,13 @@ platform :ios do
     UI.success("DocLens submitted for App Store review!")
   end
 
-  desc "Submit existing TestFlight build for review (no rebuild, key from ~/.appstoreconnect/private_keys/)"
+  desc "Submit existing TestFlight build for review (no rebuild)"
   lane :submit_review_only do
     setup_ci if ENV["CI"]
 
-    # Key file must be at $HOME/.appstoreconnect/private_keys/AuthKey_{key_id}.p8
     api_key = app_store_connect_api_key(
-      key_id:    ENV["ASC_KEY_ID"],
-      issuer_id: ENV["ASC_ISSUER_ID"],
+      key_id:      ENV["ASC_KEY_ID"],
+      issuer_id:   ENV["ASC_ISSUER_ID"],
       key_filepath: File.join(Dir.home, ".appstoreconnect/private_keys/AuthKey_#{ENV["ASC_KEY_ID"]}.p8")
     )
 
@@ -92,16 +91,16 @@ platform :ios do
       app_identifier:        "com.kokicoder.doclens",
       name:                  "DocLens - AI Document Scanner",
       description: {
-        "en-US" => File.read("app_store/description_en.txt"),
-        "ja"    => File.read("app_store/description_ja.txt")
+        "en-US" => File.read("../app_store/description_en.txt"),
+        "ja"    => File.read("../app_store/description_ja.txt")
       },
       keywords: {
         "en-US" => "document scanner,ocr,pdf scanner,text recognition,ai scanner,receipt scan,contract scan,scan to text",
         "ja"    => "スキャナー,OCR,文書スキャン,文字認識,AIスキャン,レシート読み取り,PDF作成,書類整理"
       },
       release_notes: {
-        "en-US" => (ENV["RELEASE_NOTES"] || File.read("app_store/whats_new_en.txt")),
-        "ja"    => File.read("app_store/whats_new_ja.txt")
+        "en-US" => (ENV["RELEASE_NOTES"] || File.read("../app_store/whats_new_en.txt")),
+        "ja"    => File.read("../app_store/whats_new_ja.txt")
       },
       primary_category:      "UTILITIES",
       secondary_category:    "PRODUCTIVITY",
