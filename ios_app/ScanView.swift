@@ -5,6 +5,7 @@ import VisionKit
 struct ScanView: View {
     @EnvironmentObject var store: StoreManager
     @EnvironmentObject var documentStore: DocumentStore
+    @State private var ambientPhase = false
     @State private var showScanner = false
     @State private var showPhotoPicker = false
     @State private var selectedPhoto: PhotosPickerItem?
@@ -71,7 +72,7 @@ struct ScanView: View {
                 Button("OK") { errorMessage = nil }
             } message: { Text(errorMessage ?? "") }
         }
-        .onAppear {
+        .onAppear { ambientPhase = true;
             withAnimation(.easeInOut(duration: 2.0).repeatForever(autoreverses: true)) { orbScale = 1.06 }
         }
     }
@@ -80,10 +81,25 @@ struct ScanView: View {
 
     private var ambientGlow: some View {
         ZStack {
-            Ellipse().fill(Color.appAccent.opacity(0.1)).frame(width: 300, height: 250)
-                .blur(radius: 70).offset(y: -80)
+            Color.appBG.ignoresSafeArea()
+            Ellipse()
+                .fill(Color.appAccent.opacity(0.15))
+                .frame(width: 380, height: 280).blur(radius: 80)
+                .offset(x: 60, y: -200).offset(y: ambientPhase ? 22 : -22)
+                .animation(.easeInOut(duration: 6).repeatForever(autoreverses: true), value: ambientPhase)
+            Ellipse()
+                .fill(Color(hex: "60A5FA").opacity(0.09))
+                .frame(width: 320, height: 220).blur(radius: 70)
+                .offset(x: -80, y: 120).offset(x: ambientPhase ? 18 : -18)
+                .animation(.easeInOut(duration: 7.5).repeatForever(autoreverses: true), value: ambientPhase)
+            Ellipse()
+                .fill(Color.appAccent.opacity(0.06))
+                .frame(width: 220, height: 160).blur(radius: 60)
+                .offset(x: 20, y: 340).scaleEffect(ambientPhase ? 1.25 : 1.0)
+                .animation(.easeInOut(duration: 5.5).repeatForever(autoreverses: true), value: ambientPhase)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .ignoresSafeArea()
         .allowsHitTesting(false)
     }
 
