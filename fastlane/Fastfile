@@ -22,7 +22,7 @@ platform :ios do
       output_directory:    "./build",
       output_name:         "DocLens.ipa",
       export_method:       "app-store",
-      xcargs:              "DEVELOPMENT_TEAM=#{ENV["DEVELOPMENT_TEAM"]} ANTHROPIC_API_KEY=#{ENV["ANTHROPIC_API_KEY"]}",
+      xcargs:              "DEVELOPMENT_TEAM=#{ENV["DEVELOPMENT_TEAM"]}",
       clean:               true
     )
 
@@ -37,14 +37,14 @@ platform :ios do
       api_key:                  api_key,
       ipa:                      "./build/DocLens.ipa",
       app_identifier:           "com.kokicoder.doclens",
-      name:                     {"en-US" => "DocLens - AI Document Scanner", "ja" => "DocLens - AIドキュメントスキャナー"},
+      name:                     {"en-US" => "DocLens", "ja" => "DocLens"},
       description:              {
         "en-US" => File.read("../app_store/description_en.txt"),
         "ja"    => File.read("../app_store/description_ja.txt")
       },
       keywords:                 {
-        "en-US" => "document scanner,ocr,pdf scanner,text recognition,ai scanner,receipt scan,contract scan,scan to text",
-        "ja"    => "スキャナー,OCR,文書スキャン,文字認識,AIスキャン,レシート読み取り,PDF作成,書類整理"
+        "en-US" => "document scanner,ocr,pdf,receipt,contract,scan,text",
+        "ja"    => "スキャナー,OCR,文書スキャン,文字認識,レシート,PDF,書類整理"
       },
       release_notes:            {
         "en-US" => File.read("../app_store/whats_new_en.txt"),
@@ -52,8 +52,8 @@ platform :ios do
       },
       primary_category:         "UTILITIES",
       secondary_category:       "PRODUCTIVITY",
-      privacy_url:              {"default" => "https://github.com/Koki-coder-crypto/LynQ_backend/blob/master/app_store/privacy_policy.html"},
-      support_url:              {"default" => "https://github.com/Koki-coder-crypto/LynQ_backend/issues"},
+      privacy_url:              {"default" => "https://koki-coder-crypto.github.io/DocLens/privacy.html"},
+      support_url:              {"default" => "https://koki-coder-crypto.github.io/DocLens/support.html"},
       price_tier:               0,
       app_review_information: {
         first_name:    "Koki",
@@ -62,7 +62,7 @@ platform :ios do
         email_address: "kouki_1203@icloud.com",
         demo_user:     nil,
         demo_password: nil,
-        notes:         "No login required. AI document scanner - requires camera permission to scan documents."
+        notes:         "No login required. DocLens scans documents and recognizes Japanese or English text on-device. Camera and photo access are used only after the reviewer chooses scan or import."
       },
       submission_information:   {
         export_compliance_uses_encryption:            false,
@@ -99,14 +99,14 @@ platform :ios do
     deliver(
       api_key:               api_key,
       app_identifier:        "com.kokicoder.doclens",
-      name:                  {"en-US" => "DocLens - AI Document Scanner", "ja" => "DocLens - AIドキュメントスキャナー"},
+      name:                  {"en-US" => "DocLens", "ja" => "DocLens"},
       description: {
         "en-US" => File.read("../app_store/description_en.txt"),
         "ja"    => File.read("../app_store/description_ja.txt")
       },
       keywords: {
-        "en-US" => "document scanner,ocr,pdf scanner,text recognition,ai scanner,receipt scan,contract scan,scan to text",
-        "ja"    => "スキャナー,OCR,文書スキャン,文字認識,AIスキャン,レシート読み取り,PDF作成,書類整理"
+        "en-US" => "document scanner,ocr,pdf,receipt,contract,scan,text",
+        "ja"    => "スキャナー,OCR,文書スキャン,文字認識,レシート,PDF,書類整理"
       },
       release_notes: {
         "en-US" => (ENV["RELEASE_NOTES"] || File.read("../app_store/whats_new_en.txt")),
@@ -114,8 +114,8 @@ platform :ios do
       },
       primary_category:      "UTILITIES",
       secondary_category:    "PRODUCTIVITY",
-      privacy_url:           {"default" => "https://github.com/Koki-coder-crypto/LynQ_backend/blob/master/app_store/privacy_policy.html"},
-      support_url:           {"default" => "https://github.com/Koki-coder-crypto/LynQ_backend/issues"},
+      privacy_url:           {"default" => "https://koki-coder-crypto.github.io/DocLens/privacy.html"},
+      support_url:           {"default" => "https://koki-coder-crypto.github.io/DocLens/support.html"},
       app_review_information: {
         first_name:    "Koki",
         last_name:     "Egawa",
@@ -123,7 +123,7 @@ platform :ios do
         email_address: "kouki_1203@icloud.com",
         demo_user:     nil,
         demo_password: nil,
-        notes:         "No login required. AI document scanner - requires camera permission to scan documents."
+        notes:         "No login required. DocLens scans documents and recognizes Japanese or English text on-device. Camera and photo access are used only after the reviewer chooses scan or import."
       },
       submission_information: {
         export_compliance_uses_encryption:           false,
@@ -160,7 +160,7 @@ platform :ios do
       output_directory: "./build",
       output_name:      "DocLens.ipa",
       export_method:    "app-store",
-      xcargs:           "DEVELOPMENT_TEAM=#{ENV["DEVELOPMENT_TEAM"]} ANTHROPIC_API_KEY=#{ENV["ANTHROPIC_API_KEY"]}",
+      xcargs:           "DEVELOPMENT_TEAM=#{ENV["DEVELOPMENT_TEAM"]}",
       clean: true
     )
   end

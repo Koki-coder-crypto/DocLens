@@ -1,7 +1,7 @@
 {
   "app_info": {
-    "name": "DocLens - AI Document Scanner",
-    "subtitle": "Scan. Extract. Understand.",
+    "name": "DocLens",
+    "subtitle": "Scan, OCR, and export PDFs",
     "bundle_id": "com.kokicoder.doclens",
     "sku": "DOCLENS001",
     "primary_language": "en-US",
@@ -33,10 +33,10 @@
     "copyright": "2026 Koki. All rights reserved."
   },
   "app_store_info": {
-    "promotional_text": "Snap any document and get an AI summary in seconds. Receipts, contracts, notes, and more. 📄",
-    "support_url": "https://github.com/Koki-coder-crypto/LynQ_backend/issues",
-    "marketing_url": "https://github.com/Koki-coder-crypto/LynQ_backend",
-    "privacy_policy_url": "https://github.com/Koki-coder-crypto/LynQ_backend/blob/master/app_store/privacy_policy.html"
+    "promotional_text": "Scan documents, recognize Japanese or English text, and export a clean PDF — privately on your device.",
+    "support_url": "https://koki-coder-crypto.github.io/DocLens/support.html",
+    "marketing_url": "https://github.com/Koki-coder-crypto/DocLens",
+    "privacy_policy_url": "https://koki-coder-crypto.github.io/DocLens/privacy.html"
   },
   "review_info": {
     "first_name": "Koki",
@@ -48,16 +48,16 @@
   },
   "localizations": {
     "en-US": {
-      "name": "DocLens - AI Document Scanner",
-      "subtitle": "Scan. Extract. Understand.",
-      "keywords": "document scanner,ocr,pdf scanner,text recognition,ai scanner,receipt scan,contract scan,scan to text",
+      "name": "DocLens",
+      "subtitle": "Scan, OCR, and export PDFs",
+      "keywords": "document scanner,ocr,pdf,receipt,contract,scan,text",
       "description_file": "description_en.txt",
       "whats_new_file": "whats_new_en.txt"
     },
     "ja": {
-      "name": "DocLens - AIドキュメントスキャナー",
-      "subtitle": "スキャン・文字抽出・AI解析",
-      "keywords": "スキャナー,OCR,文書スキャン,文字認識,AIスキャン,レシート読み取り,PDF作成,書類整理",
+      "name": "DocLens",
+      "subtitle": "スキャン・OCR・PDF出力",
+      "keywords": "スキャナー,OCR,文書スキャン,文字認識,レシート,PDF,書類整理",
       "description_file": "description_ja.txt",
       "whats_new_file": "whats_new_ja.txt"
     }
@@ -67,42 +67,30 @@
       "product_id": "com.kokicoder.doclens.pro.monthly",
       "type": "auto_renewable_subscription",
       "reference_name": "DocLens Pro Monthly",
-      "price_tier": "Tier 4",
-      "price_usd": 3.99,
-      "price_jpy": 600,
+      "price_tier": "Tier 5",
+      "price_usd": 4.99,
+      "price_jpy": 700,
       "subscription_group": "DocLens Pro",
       "subscription_duration": "1 Month",
-      "free_trial": "3 Days",
+      "free_trial": null,
       "localizations": {
-        "en-US": { "display_name": "DocLens Pro Monthly", "description": "Unlimited scans with AI analysis, billed monthly." },
-        "ja":    { "display_name": "DocLens Pro 月額プラン", "description": "無制限スキャン＋AI解析。月額課金。" }
+        "en-US": { "display_name": "DocLens Pro Monthly", "description": "More document scans and exports, billed monthly." },
+        "ja":    { "display_name": "DocLens Pro 月額プラン", "description": "文書スキャンと出力をより多く使える月額プラン。" }
       }
     },
     {
       "product_id": "com.kokicoder.doclens.pro.annual",
       "type": "auto_renewable_subscription",
       "reference_name": "DocLens Pro Annual",
-      "price_tier": "Tier 14",
-      "price_usd": 27.99,
-      "price_jpy": 4200,
+      "price_tier": "Tier 15",
+      "price_usd": 34.99,
+      "price_jpy": 4900,
       "subscription_group": "DocLens Pro",
       "subscription_duration": "1 Year",
       "free_trial": "7 Days",
       "localizations": {
-        "en-US": { "display_name": "DocLens Pro Annual", "description": "Unlimited AI-powered document scanning — save 42% vs. monthly." },
-        "ja":    { "display_name": "DocLens Pro 年額プラン", "description": "無制限スキャン＋AI解析。月額より42%お得。" }
-      }
-    },
-    {
-      "product_id": "com.kokicoder.doclens.lifetime",
-      "type": "non_consumable",
-      "reference_name": "DocLens Lifetime",
-      "price_tier": "Tier 23",
-      "price_usd": 34.99,
-      "price_jpy": 5400,
-      "localizations": {
-        "en-US": { "display_name": "DocLens Lifetime", "description": "Pay once and unlock DocLens Pro forever — no recurring fees." },
-        "ja":    { "display_name": "DocLens 買い切りプラン", "description": "一度の購入でDocLens Proを永久に利用できます。" }
+        "en-US": { "display_name": "DocLens Pro Annual", "description": "More document scans and exports. Includes a 7-day trial where offered." },
+        "ja":    { "display_name": "DocLens Pro 年額プラン", "description": "文書スキャンと出力をより多く使える年額プラン。7日間トライアル対象。" }
       }
     }
   ],

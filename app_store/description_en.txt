@@ -1,6 +1,6 @@
-DocLens turns your camera into a powerful AI-powered document reader.
+DocLens turns your camera into a private document scanner.
 
-Point your camera at any document - a receipt, contract, handwritten note, article, or ID - and DocLens extracts the text and generates an instant AI summary.
+Point your camera at a receipt, contract, handwritten note, or article. DocLens scans it, extracts Japanese or English text on your device, and creates a concise document overview.
 
 WHAT DOCLENS DOES
 
@@ -8,16 +8,13 @@ SCAN
 Use the built-in document camera for crisp, multi-page scans. Or import any existing image from your photo library.
 
 OCR
-High-accuracy text recognition powered by Apple Vision framework - works offline, supports 7 languages including English and Japanese.
+On-device text recognition for Japanese and English. Your scan stays on your device.
 
-AI ANALYSIS
-After scanning, AI automatically produces:
-- A clear document summary
-- Key facts and figures extracted
-- Smart category detection (receipt, contract, note, article, and more)
+DOCUMENT OVERVIEW
+After scanning, DocLens helps you review a short overview, key lines, and a practical document category.
 
 ORGANIZE
-Your document library with search and category filters. Tap any document to view the original scan, extracted text, and AI summary side by side.
+Your document library with search and category filters. Tap any document to view the original scan, extracted text, and overview side by side.
 
 EXPORT
 Share extracted text or summaries via the system share sheet - copy to clipboard, send via email, or export to any app.
@@ -27,20 +24,17 @@ DOCLENS PRO
 Free plan: 5 scans/month with basic OCR.
 
 Upgrade to Pro for:
-- Unlimited scans
-- Full AI analysis on every document
+- More scans and exports when you need them
 - Multi-page document scanning
 - PDF and text export
-- Smart category organization
+- Document organization tools
 - No ads, ever
 
-Plans: Monthly ($3.99/mo), Annual ($27.99/yr), or Lifetime ($34.99 one-time).
-Annual plan includes a 7-day free trial.
+Plans: Monthly ($4.99/mo) or Annual ($34.99/yr). Prices vary by storefront. The annual plan includes a 7-day free trial where offered; the monthly plan starts immediately. Your Apple ID is charged after the trial unless you cancel at least 24 hours before it ends.
 
 PRIVACY
 
 - OCR runs entirely on your device - images are never uploaded
-- AI analysis uses encrypted API calls with no data retention
 - All documents are stored locally on your device only
 
 DocLens - every document, instantly understood.

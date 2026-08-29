@@ -28,11 +28,9 @@
         <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
     <key>NSCameraUsageDescription</key>
-    <string>DocLens uses the camera to scan and analyze documents.</string>
+    <string>DocLens uses the camera to scan documents on this device.</string>
     <key>NSPhotoLibraryUsageDescription</key>
-    <string>DocLens can analyze documents from your photo library.</string>
-    <key>ANTHROPIC_API_KEY</key>
-    <string>$(ANTHROPIC_API_KEY)</string>
+    <string>DocLens can read documents you choose from your photo library on this device.</string>
     <key>ITSAppUsesNonExemptEncryption</key>
     <false/>
 </dict>

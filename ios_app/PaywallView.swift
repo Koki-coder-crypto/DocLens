@@ -82,8 +82,8 @@ struct PaywallView: View {
 
     private let features: [(icon: String, color: Color, title: String, detail: String)] = [
         ("infinity",           Color(hex: "2DD4BF"), "Unlimited scans",          "No monthly limits"),
-        ("sparkles",           Color(hex: "F59E0B"), "AI summary & key points",  "Instant insights"),
-        ("character.magnify",  Color(hex: "60A5FA"), "OCR in 7 languages",       "High accuracy"),
+        ("text.viewfinder",    Color(hex: "F59E0B"), "On-device text extraction", "Read and review quickly"),
+        ("character.magnify",  Color(hex: "60A5FA"), "Japanese & English OCR",    "Private by design"),
         ("arrow.up.doc.fill",  Color(hex: "A78BFA"), "Export to PDF & TXT",      "Share anywhere"),
         ("folder.fill",        Color(hex: "2ECC71"), "Smart library & search",   "Find anything fast"),
         ("nosign",             Color(hex: "E74C3C"), "Zero ads",                 "Clean experience"),
@@ -126,13 +126,6 @@ struct PaywallView: View {
                     Haptics.selection(); withAnimation(.spring(response: 0.3)) { selectedPlan = p.id }
                 }
             }
-            if let p = store.lifetime {
-                DocPlanCard(title: "Lifetime", displayPrice: p.displayPrice, period: "one-time",
-                            badge: "Pay Once, Keep Forever", badgeColor: Color(hex: "F59E0B"),
-                            trialNote: nil, selected: selectedPlan == p.id) {
-                    Haptics.selection(); withAnimation(.spring(response: 0.3)) { selectedPlan = p.id }
-                }
-            }
         }
     }
 
@@ -164,12 +157,12 @@ struct PaywallView: View {
 
     private var legalSection: some View {
         VStack(spacing: 8) {
-            Text("Subscriptions auto-renew. Cancel anytime in Apple ID settings.")
+            Text("The annual plan includes a 7-day free trial, then renews at the price Apple shows before purchase. Cancel anytime in Apple ID settings.")
                 .font(.system(size: 11)).foregroundStyle(Color.appMuted.opacity(0.5))
                 .multilineTextAlignment(.center).padding(.horizontal, 40)
             HStack(spacing: 20) {
-                Link("Privacy Policy", destination: URL(string: "https://github.com/Koki-coder-crypto/LynQ_backend/blob/master/app_store/privacy_policy.html")!)
-                Link("Terms of Use",   destination: URL(string: "https://github.com/Koki-coder-crypto/LynQ_backend/blob/master/app_store/terms_of_service.html")!)
+                Link("Privacy Policy", destination: URL(string: "https://koki-coder-crypto.github.io/DocLens/privacy.html")!)
+                Link("Terms of Use",   destination: URL(string: "https://koki-coder-crypto.github.io/DocLens/terms.html")!)
             }
             .font(.system(size: 12, weight: .medium)).foregroundStyle(Color.appAccent.opacity(0.65))
         }

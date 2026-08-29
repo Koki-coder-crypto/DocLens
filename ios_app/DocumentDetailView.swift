@@ -77,7 +77,7 @@ struct DocumentDetailView: View {
     @ViewBuilder
     private var summarySection: some View {
         if let summary = document.summary, !summary.isEmpty {
-            InfoCard(title: "AI Summary", icon: "sparkles", color: .teal) {
+            InfoCard(title: "Document overview", icon: "text.viewfinder", color: .teal) {
                 Text(summary)
                     .font(.body)
             }
